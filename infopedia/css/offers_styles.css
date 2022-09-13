@@ -276,13 +276,6 @@ section
 3. Header
 *********************************/
 
-.header
-{
-	position: fixed;
-	width: 100%;
-	background: rgba(54, 19, 84, 0.6);
-	z-index: 12;
-}
 .header.scrolled
 {
 	background: rgba(54, 19, 84, 0.85);
@@ -366,8 +359,8 @@ section
 .offers
 {
 	width: 100%;
-	padding-top: 115px;
-	padding-bottom: 115px;
+	padding-top: auto;
+	padding-bottom: auto;
 }
 
 /*********************************

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>DGital - Digital Agency HTML Template</title>
+    <title>Infopedia</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -14,7 +14,8 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -25,17 +26,58 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
+    <link href="lib/aos/aos.css" rel="stylesheet" />
+    <link href="lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+    <link href="lib/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="lib/glightbox/css/glightbox.min.css" rel="stylesheet" />
+    <link href="lib/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="lib/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style type="text/css">
+        .container{
+            margin: 60px auto;
+            text-align: center;
+        }
+        img.zoom {
+            width: 850px;
+            height: auto;
+            -webkit-transition: all .2s ease-in-out;
+            -moz-transition: all .2s ease-in-out;
+            -o-transition: all .2s ease-in-out;
+            -ms-transition: all .2s ease-in-out;
+        }
+         
+        .transisi {
+            -webkit-transform: scale(1.8); 
+            -moz-transform: scale(1.8);
+            -o-transform: scale(1.8);
+            transform: scale(1.8);
+        }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $('.zoom').hover(function() {
+                $(this).addClass('transisi');
+            }, function() {
+                $(this).removeClass('transisi');
+            });
+        });  
+        </script>
+
 </head>
 
 <body>
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
-        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
@@ -46,46 +88,54 @@
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0">DGital</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                <a href="index.html" class="navbar-brand p-0">
+                    <!-- <h1 class="m-0">Infopedia</h1> -->
+                    <img src="img/logo.png" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="project.html" class="nav-item nav-link">Project</a>
+                        <a href="pengertian.html" class="nav-item nav-link">Pengertian Informatika</a>
+                        <a href="karir.html" class="nav-item nav-link">Peluang Kerja</a>
+                        <a href="riset.html" class="nav-item nav-link activr">Riset Pemograman</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pemograman</a>
                             <div class="dropdown-menu m-0">
-                                <a href="team.html" class="dropdown-item">Our Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item active">404 Page</a>
+                                <a href="bahasa.html" class="dropdown-item">Bahasa Pemrograman</a>
+                                <a href="dasar.html" class="dropdown-item">Dasar pemrograman</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
-                    <a href="" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Get Started</a>
                 </div>
             </nav>
 
             <div class="container-xxl py-5 bg-primary hero-header">
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                                <li class="breadcrumb-item text-white active" aria-current="page">RIset Pemrograman
+                                </li>
+                            </ol>
+                        </nav>
                         <div class="col-12 text-center">
-                            <h1 class="text-white animated slideInDown">Not Found</h1>
-                            <hr class="bg-white mx-auto mt-0" style="width: 90px;">
-                            <nav aria-label="breadcrumb">
-                                <ol class="breadcrumb justify-content-center">
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                                    <li class="breadcrumb-item text-white active" aria-current="page">404</li>
-                                </ol>
-                            </nav>
+                            <hr class="bg-white mx-auto mt-0" style="width: 300px;">
+                            <h1 class="text-white animated slideInDown">Riset pemrograman</h1>
+                            <hr class="bg-white mx-auto mt-0" style="width: 300px;">
+                            <br />
+
+                            <p>
+                                <font color="#fffff">Bahasa pemrograman yaitu sebuah rangkaian kata berbentuk instruksi
+                                    atau perintah-perintah yang terdiri dari satu atau beberapa baris yang dimengerti
+                                    oleh komputer. Dalam membuat aplikasi tertentu, digunakan juga bahasa pemrograman
+                                    yang sesuai dengan kebutuhan aplikasi maka dari itu, seorang developer wajib
+                                    menguasai atau memahami berbagai bahasa pemrograman tersebut. </font>
+                            </p>
+
                         </div>
                     </div>
                 </div>
@@ -93,23 +143,11 @@
         </div>
         <!-- Navbar & Hero End -->
 
-
-        <!-- 404 Start -->
-        <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="container px-lg-5 text-center">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
-                        <h1 class="display-1">404</h1>
-                        <h1 class="mb-4">Page Not Found</h1>
-                        <p class="mb-4">We’re sorry, the page you have looked for does not exist in our website! Maybe go to our home page or try to use a search?</p>
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="">Go Back To Home</a>
-                    </div>
-                </div>
-            </div>
+        <!--Riset-->
+        <div class="container">
+            <img src="img/riset.png" class="zoom"/>
         </div>
-        <!-- 404 End -->
-        
+
 
         <!-- Footer Start -->
         <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
@@ -160,31 +198,13 @@
                     </div>
                     <div class="col-md-6 col-lg-3">
                         <p class="section-title text-white h5 mb-4">Newsletter<span></span></p>
-                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
+                        <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare
+                            velit non vulpu</p>
                         <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text" placeholder="Your Email" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-primary fs-4"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container px-lg-5">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br> 
-                            Distributed By a <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="">Home</a>
-                                <a href="">Cookies</a>
-                                <a href="">Help</a>
-                                <a href="">FQAs</a>
-                            </div>
+                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                                placeholder="Your Email" style="height: 48px;">
+                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                    class="fa fa-paper-plane text-primary fs-4"></i></button>
                         </div>
                     </div>
                 </div>
@@ -207,6 +227,20 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/aos/aos.js"></script>
+    <script src="lib/glightbox/js/glightbox.min.js"></script>
+    <script src="lib/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="lib/swiper/swiper-bundle.min.js"></script>
+    <script src="lib/waypoints/noframework.waypoints.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous">
+    </script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
